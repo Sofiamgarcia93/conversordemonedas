@@ -13,7 +13,7 @@ const resultado = document.getElementById('resultado');
 const calculoDeMoneda = () =>{
 switch (tipoDeCambio.value){
 case 'usd':
-    resultado.textContent = inputCantidad.value * 148;
+    resultado.textContent = inputCantidad.value * 0.011;
     break;
 case 'mxn':
     resultado.textContent = inputCantidad.value * 0.21;
@@ -32,7 +32,7 @@ default:
 /*
 const calculoDeMoneda = () =>{
 if(tipoDeCambio.value === 'usd'){
-    resultado.textContent = inputCantidad.value * 148;
+    resultado.textContent = inputCantidad.value * 0.011;
 }else if(tipoDeCambio.value === 'mxn'){
     resultado.textContent = inputCantidad.value * 0.21;
 }else if(tipoDeCambio.value === 'col'){
