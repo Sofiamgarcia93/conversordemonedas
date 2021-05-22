@@ -46,3 +46,9 @@ if(tipoDeCambio.value === 'usd'){
 
 tipoDeCambio.addEventListener('input', calculoDeMoneda);
 inputCantidad.addEventListener('input', calculoDeMoneda);
+inputCantidad.addEventListener('input', () =>{
+    inputCantidad.style = "background-color: green; height: 6vh;"; 
+    tipoDeCambio.style.backgroundColor = "green";
+    resultado.style.backgroundColor = "green";
+});
+
